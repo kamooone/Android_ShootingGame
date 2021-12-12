@@ -1,0 +1,1364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="match_parent"
+        android:layout_height="125px"
+        android:text="Score : 300"
+        android:textSize="100px"
+        android:paddingLeft="25px"
+        android:fontFamily="cursive"
+        android:gravity="center_vertical"/>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/bg1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg" />
+
+        <TextView
+            android:id="@+id/startLabel"
+            android:textColor="@color/purple_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="タップしてスタート"
+            android:textSize="40sp"
+            android:fontFamily="casual"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/roundLabel"
+            android:textColor="@color/purple_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Round1"
+            android:textSize="50sp"
+            android:fontFamily="casual"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/roundLabel2"
+            android:textColor="@color/purple_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Round2"
+            android:textSize="50sp"
+            android:fontFamily="casual"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/roundLabel3"
+            android:textColor="@color/purple_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Round3"
+            android:textSize="50sp"
+            android:fontFamily="casual"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/roundLabel4"
+            android:textColor="@color/purple_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Round4"
+            android:textSize="50sp"
+            android:fontFamily="casual"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/finalRoundLabel"
+            android:textColor="@color/purple_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FinalRound"
+            android:textSize="35sp"
+            android:fontFamily="casual"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/bullet1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet6"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet7"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet8"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet9"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet10"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet11"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet12"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet13"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet14"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet15"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet16"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet17"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet18"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet19"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet20"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet21"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet22"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet23"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet24"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet25"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet26"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet27"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet28"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet29"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bullet30"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/boss"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:src="@drawable/boss"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/player"
+            android:layout_width="250px"
+            android:layout_height="250px"
+            android:src="@drawable/ziki"
+            android:layout_gravity="center_vertical"/>
+
+
+        <ImageView
+            android:id="@+id/enemy1"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/enemy2"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/enemy3"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/enemy4"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/enemy5"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/enemy6"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/enemy7"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/enemy8"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/enemy9"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/enemy10"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/enemy11"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/enemy12"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/enemy13"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/enemy14"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/enemy15"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/enemy16"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/enemy17"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/enemy18"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/enemy19"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/enemy20"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/enemy21"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/enemy22"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/enemy23"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/enemy24"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/enemy"
+            android:layout_gravity="center_vertical"/>
+
+
+        <ImageView
+            android:id="@+id/explosion1"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion2"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion3"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion4"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion5"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion6"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion7"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion8"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion9"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion10"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion11"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion12"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion13"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion14"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion15"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion16"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion17"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion18"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion19"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion20"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion21"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion22"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion23"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion24"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/explosion25"
+            android:layout_width="300px"
+            android:layout_height="250px"
+            android:src="@drawable/explosion1"
+            android:layout_gravity="center_vertical"/>
+
+
+        <ImageView
+            android:id="@+id/enemyBullet1_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet1_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet1_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet1_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet1_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+
+        <ImageView
+            android:id="@+id/enemyBullet2_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet2_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet2_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet2_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet2_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+
+        <ImageView
+            android:id="@+id/enemyBullet3_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet3_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet3_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet3_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet3_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+
+        <ImageView
+            android:id="@+id/enemyBullet4_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet4_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet4_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet4_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet4_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+
+        <ImageView
+            android:id="@+id/enemyBullet5_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet5_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet5_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet5_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet5_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+
+        <ImageView
+            android:id="@+id/enemyBullet6_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet6_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet6_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet6_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet6_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+
+        <ImageView
+            android:id="@+id/enemyBullet7_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet7_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet7_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet7_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet7_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+
+        <ImageView
+            android:id="@+id/enemyBullet8_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet8_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet8_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet8_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet8_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+
+        <ImageView
+            android:id="@+id/enemyBullet9_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet9_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet9_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet9_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet9_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+
+        <ImageView
+            android:id="@+id/enemyBullet10_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet10_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet10_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet10_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet10_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet11_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet11_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet11_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet11_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet11_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet12_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet12_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet12_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet12_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet12_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet13_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet13_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet13_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet13_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet13_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet14_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet14_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet14_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet14_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet14_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet15_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet15_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet15_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet15_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet15_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet16_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet16_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet16_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet16_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet16_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet17_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet17_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet17_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet17_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet17_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet18_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet18_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet18_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet18_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet18_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet19_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet19_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet19_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet19_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet19_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet20_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet20_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet20_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet20_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet20_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet21_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet21_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet21_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet21_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet21_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet22_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet22_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet22_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet22_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet22_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet23_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet23_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet23_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet23_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet23_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet24_1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet24_2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet24_3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet24_4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/enemyBullet24_5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/pink" />
+
+    </FrameLayout>
+
+</LinearLayout>
